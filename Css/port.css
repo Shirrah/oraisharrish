@@ -1,3 +1,4 @@
+
 body {
     margin: 0%;
     padding: 0%;
@@ -33,6 +34,7 @@ body {
 /*container of the lists*/
 .topnav .listcon {
     text-align: center;
+    white-space: nowrap;
     width: 40%;
     height: 100%;
     float: right;
@@ -42,7 +44,6 @@ body {
 .topnav .listcon a {
     padding: 10px 10px 10px 10px;
     transition: background-color 1s, border-radius 1s;
-    margin: 50px 50px 0px 0px;
     text-decoration: none;
     color: white;
 }
@@ -90,4 +91,62 @@ body {
     width: auto;
     height: 1000px;
     margin: 0px 40px 0px 40px;
+}
+
+@media screen and (max-width:600px)
+{
+/*the style of the image*/
+.topnav .logocon img {
+    width: min-content;
+    margin: 5px;
+    height: 20px;
+}
+/*the style of the list items in nav bar eg:home and etc*/
+.topnav .listcon a {
+    padding: 4px 04px 04px 04px;
+    transition: background-color 1s, border-radius 1s;
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+}
+/*container of the lists*/
+.topnav .listcon {
+    text-align: center;
+    white-space: nowrap;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+/*container of the live chat in navbar*/
+.livechat {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+/*style of the live chat in nav bar*/
+.livechat a {
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    background-color: white;
+    transition: background-color 1s, border-color 1s;
+    text-decoration: none;
+    color: black;
+    border: 2px solid white;
+    font-size: 8px;
+}
+.livechat .livechatimg{
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+/*container of the logo*/
+.topnav .logocon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
 }
