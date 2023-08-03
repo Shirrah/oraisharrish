@@ -1,0 +1,93 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #333;
+}
+
+/*conatiner of the nav bar*/
+.topnav {
+    width: auto;
+    height: auto;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+}
+
+/*container of the logo*/
+.topnav .logocon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+/*the style of the image*/
+.topnav .logocon img {
+    width: min-content;
+    margin: 10px;
+    height: 40px;
+}
+
+/*container of the lists*/
+.topnav .listcon {
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+
+/*the style of the list items in nav bar eg:home and etc*/
+.topnav .listcon a {
+    padding: 10px 10px 10px 10px;
+    transition: background-color 1s, border-radius 1s;
+    margin: 50px 50px 0px 0px;
+    text-decoration: none;
+    color: white;
+}
+
+/*hover of the list items in the navbar*/
+.topnav .listcon a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*container of the live chat in navbar*/
+.livechat {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+
+/*style of the live chat in nav bar*/
+.livechat a {
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: white;
+    transition: background-color 1s, border-color 1s;
+    text-decoration: none;
+    color: black;
+    border: 2px solid white;
+}
+
+.livechat .livechatimg{
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+}
+
+/*hover of the livechat item in the navbar*/
+.livechat a:hover {
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border-color: rgb(0, 140, 255);
+}
+
+.content{
+    border-top: 2px solid grey;
+    width: auto;
+    height: 1000px;
+    margin: 0px 40px 0px 40px;
+}
